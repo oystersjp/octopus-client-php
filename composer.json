@@ -1,0 +1,12 @@
+{
+    "name": "oystersjp/octopus-client-php",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "vlucas/phpdotenv": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Octopus\\" : "src/"
+        }
+    }
+}
