@@ -1,8 +1,6 @@
 <?php
 namespace Octopus;
 
-require_once('../vendor/autoload.php');
-
 /**
  * Class Client
  * @package Octopus
@@ -46,7 +44,7 @@ class Client
         $options = [
             'query' => ['keyword' => $keyword, 'page' => $page],
             'headers' => [
-                'Authorization' => $this->presharedKey
+                'Authorization' => 'Bearer ' . $this->presharedKey
             ]
         ];
         $response = $this->client->request('GET', self::PATH, $options);
